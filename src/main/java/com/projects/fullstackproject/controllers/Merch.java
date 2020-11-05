@@ -14,7 +14,7 @@ public class Merch {
     private String name;
 
     @Column(columnDefinition = "TEXT NOT NULL")
-    private String description;
+    private String merchDescription;
 
     @Column(length = 20, nullable = false)
     private String price;
@@ -50,11 +50,11 @@ public class Merch {
     }
 
     public String getDescription() {
-        return description;
+        return merchDescription;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.merchDescription = description;
     }
 
     public String getPrice() {
