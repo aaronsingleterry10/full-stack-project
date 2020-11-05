@@ -17,7 +17,7 @@ public class Merch {
     private String merchDescription;
 
     @Column(length = 20, nullable = false)
-    private String price;
+    private String merchPrice;
 
     @Column(length = 50, nullable = false)
     private String productCode;
@@ -58,11 +58,11 @@ public class Merch {
     }
 
     public String getPrice() {
-        return price;
+        return merchPrice;
     }
 
     public void setPrice(String price) {
-        this.price = price;
+        this.merchPrice = price;
     }
 
     public String getProductCode() {
