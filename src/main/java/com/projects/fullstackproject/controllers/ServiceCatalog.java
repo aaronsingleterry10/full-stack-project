@@ -1,6 +1,7 @@
 package com.projects.fullstackproject.controllers;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "service_catalog")
@@ -18,6 +19,9 @@ public class ServiceCatalog {
 
     @Column(length = 10, nullable = false)
     private String servicePrice;
+
+    @ManyToMany(mappedBy = "cartServiceCatalog")
+    private List<Cart> servicesForCart;
 
     private boolean includesParts;
 

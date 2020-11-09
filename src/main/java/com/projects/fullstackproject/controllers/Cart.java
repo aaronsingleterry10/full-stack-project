@@ -31,6 +31,14 @@ public class Cart {
     )
     private List<Merch> cartMerch;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "cart_service",
+            joinColumns = {@JoinColumn(name = "cart_id")},
+            inverseJoinColumns = {@JoinColumn(name = "service_catalog_id")}
+    )
+    private List<ServiceCatalog> cartServiceCatalog;
+
     public Cart(){}
 
     public long getId() {
