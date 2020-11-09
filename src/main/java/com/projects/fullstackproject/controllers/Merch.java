@@ -1,6 +1,7 @@
 package com.projects.fullstackproject.controllers;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "merch")
@@ -30,6 +31,9 @@ public class Merch {
 
     @Column(length = 30)
     private String shipping;
+
+    @ManyToMany(mappedBy = "cartMerch")
+    private List<Cart> merchForCart;
 
     public Merch(){}
 
