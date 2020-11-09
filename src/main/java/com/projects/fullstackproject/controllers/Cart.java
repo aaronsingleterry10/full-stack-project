@@ -23,6 +23,14 @@ public class Cart {
     @Column(length = 10, nullable = false)
     private String phone;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "cart_merch",
+            joinColumns = {@JoinColumn(name = "cart_id")},
+            inverseJoinColumns = {@JoinColumn(name = "merch_id")}
+    )
+    private List<Merch> cartMerch;
+
     public Cart(){}
 
     public long getId() {
