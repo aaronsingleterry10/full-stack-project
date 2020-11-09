@@ -100,4 +100,28 @@ public class Merch {
     public void setShipping(String shipping) {
         this.shipping = shipping;
     }
+
+    public String getMerchDescription() {
+        return merchDescription;
+    }
+
+    public void setMerchDescription(String merchDescription) {
+        this.merchDescription = merchDescription;
+    }
+
+    public String getMerchPrice() {
+        return merchPrice;
+    }
+
+    public void setMerchPrice(String merchPrice) {
+        this.merchPrice = merchPrice;
+    }
+
+    public List<Cart> getMerchForCart() {
+        return merchForCart;
+    }
+
+    public void setMerchForCart(List<Cart> merchForCart) {
+        this.merchForCart = merchForCart;
+    }
 }

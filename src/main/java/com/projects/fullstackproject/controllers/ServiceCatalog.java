@@ -66,4 +66,12 @@ public class ServiceCatalog {
     public void setIncludesParts(boolean includesParts) {
         this.includesParts = includesParts;
     }
+
+    public List<Cart> getServicesForCart() {
+        return servicesForCart;
+    }
+
+    public void setServicesForCart(List<Cart> servicesForCart) {
+        this.servicesForCart = servicesForCart;
+    }
 }
