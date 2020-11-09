@@ -31,6 +31,10 @@ public class Components {
     @Column(length = 20)
     private String shipping;
 
+    @ManyToOne
+    @JoinColumn(name = "cart_id")
+    private Cart componentsCart;
+
     public Components(){}
 
     public long getId() {
@@ -95,5 +99,13 @@ public class Components {
 
     public void setShipping(String shipping) {
         this.shipping = shipping;
+    }
+
+    public Cart getComponentsCart() {
+        return componentsCart;
+    }
+
+    public void setComponentsCart(Cart componentsCart) {
+        this.componentsCart = componentsCart;
     }
 }
