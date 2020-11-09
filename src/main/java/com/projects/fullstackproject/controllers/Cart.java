@@ -14,7 +14,10 @@ public class Cart {
     @OneToMany
     private List<ServiceCatalog> cartServices;
 
-    @OneToMany
+    @OneToMany(
+            cascade = CascadeType.ALL,
+            mappedBy = "componentsCart"
+    )
     private List<Components> cartComponents;
 
     @Column(length = 20, nullable = false)
