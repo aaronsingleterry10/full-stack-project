@@ -11,15 +11,6 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @OneToMany
-    private List<ServiceCatalog> cartServices;
-
-    @OneToMany(
-            cascade = CascadeType.ALL,
-            mappedBy = "componentsCart"
-    )
-    private List<Components> cartComponents;
-
     @Column(length = 20, nullable = false)
     private String firstName;
 
@@ -40,22 +31,6 @@ public class Cart {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public List<ServiceCatalog> getCartServices() {
-        return cartServices;
-    }
-
-    public void setCartServices(List<ServiceCatalog> cartServices) {
-        this.cartServices = cartServices;
-    }
-
-    public List<Components> getCartComponents() {
-        return cartComponents;
-    }
-
-    public void setCartComponents(List<Components> cartComponents) {
-        this.cartComponents = cartComponents;
     }
 
     public String getFirstName() {
