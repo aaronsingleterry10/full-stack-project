@@ -1,6 +1,7 @@
 package com.projects.fullstackproject.controllers;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "components")
@@ -34,6 +35,9 @@ public class Components {
     @ManyToOne
     @JoinColumn(name = "cart_id")
     private Cart componentsCart;
+
+    @ManyToMany(mappedBy = "cartComponents")
+    private List<Cart> componentsForCart;
 
     public Components(){}
 
@@ -107,5 +111,13 @@ public class Components {
 
     public void setComponentsCart(Cart componentsCart) {
         this.componentsCart = componentsCart;
+    }
+
+    public List<Cart> getComponentsForCart() {
+        return componentsForCart;
+    }
+
+    public void setComponentsForCart(List<Cart> componentsForCart) {
+        this.componentsForCart = componentsForCart;
     }
 }

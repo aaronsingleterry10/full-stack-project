@@ -39,6 +39,14 @@ public class Cart {
     )
     private List<ServiceCatalog> cartServiceCatalog;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "cart_components",
+            joinColumns = {@JoinColumn(name = "cart_id")},
+            inverseJoinColumns = {@JoinColumn(name = "components_id")}
+    )
+    private List<Components> cartComponents;
+
     public Cart(){}
 
     public long getId() {
@@ -79,5 +87,29 @@ public class Cart {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public List<Merch> getCartMerch() {
+        return cartMerch;
+    }
+
+    public void setCartMerch(List<Merch> cartMerch) {
+        this.cartMerch = cartMerch;
+    }
+
+    public List<ServiceCatalog> getCartServiceCatalog() {
+        return cartServiceCatalog;
+    }
+
+    public void setCartServiceCatalog(List<ServiceCatalog> cartServiceCatalog) {
+        this.cartServiceCatalog = cartServiceCatalog;
+    }
+
+    public List<Components> getCartComponents() {
+        return cartComponents;
+    }
+
+    public void setCartComponents(List<Components> cartComponents) {
+        this.cartComponents = cartComponents;
     }
 }
