@@ -11,11 +11,11 @@ public class Merch {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(length = 20, nullable = false, unique = true)
+    @Column(length = 50, nullable = false, unique = true)
     private String name;
 
-    @Column(columnDefinition = "TEXT NOT NULL")
-    private String merchDescription;
+//    @Column(columnDefinition = "TEXT NOT NULL")
+//    private String merchDescription;
 
     @Column(length = 20, nullable = false)
     private String merchPrice;
@@ -26,7 +26,7 @@ public class Merch {
     @Column(length = 20, nullable = false)
     private String productType;
 
-    @Column(length = 30)
+    @Column(columnDefinition = "TEXT")
     private String productDetails;
 
     @Column(length = 30)
@@ -56,13 +56,13 @@ public class Merch {
         this.name = name;
     }
 
-    public String getDescription() {
-        return merchDescription;
-    }
-
-    public void setDescription(String description) {
-        this.merchDescription = description;
-    }
+//    public String getDescription() {
+//        return merchDescription;
+//    }
+//
+//    public void setDescription(String description) {
+//        this.merchDescription = description;
+//    }
 
     public String getPrice() {
         return merchPrice;
@@ -104,13 +104,13 @@ public class Merch {
         this.shipping = shipping;
     }
 
-    public String getMerchDescription() {
-        return merchDescription;
-    }
-
-    public void setMerchDescription(String merchDescription) {
-        this.merchDescription = merchDescription;
-    }
+//    public String getMerchDescription() {
+//        return merchDescription;
+//    }
+//
+//    public void setMerchDescription(String merchDescription) {
+//        this.merchDescription = merchDescription;
+//    }
 
     public String getMerchPrice() {
         return merchPrice;
