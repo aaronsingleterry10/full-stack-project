@@ -14,8 +14,8 @@ public class Service {
     @Column(length = 20, nullable = false)
     private String name;
 
-    @Column(length = 20, nullable = false)
-    private String serviceType;
+//    @Column(length = 20, nullable = false)
+//    private String serviceType;
 
     public Service(){}
 
@@ -35,11 +35,11 @@ public class Service {
         this.name = name;
     }
 
-    public String getServiceType() {
-        return serviceType;
-    }
-
-    public void setServiceType(String serviceType) {
-        this.serviceType = serviceType;
-    }
+//    public String getServiceType() {
+//        return serviceType;
+//    }
+//
+//    public void setServiceType(String serviceType) {
+//        this.serviceType = serviceType;
+//    }
 }
