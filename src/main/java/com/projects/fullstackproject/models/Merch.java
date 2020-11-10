@@ -1,4 +1,4 @@
-package com.projects.fullstackproject.controllers;
+package com.projects.fullstackproject.models;
 
 import javax.persistence.*;
 import java.util.List;
