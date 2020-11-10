@@ -32,9 +32,9 @@ public class Components {
     @Column(length = 20)
     private String shipping;
 
-    @ManyToOne
-    @JoinColumn(name = "cart_id")
-    private Cart componentsCart;
+//    @ManyToOne
+//    @JoinColumn(name = "cart_id")
+//    private Cart componentsCart;
 
     @ManyToMany(mappedBy = "cartComponents")
     private List<Cart> componentsForCart;
@@ -105,13 +105,13 @@ public class Components {
         this.shipping = shipping;
     }
 
-    public Cart getComponentsCart() {
-        return componentsCart;
-    }
-
-    public void setComponentsCart(Cart componentsCart) {
-        this.componentsCart = componentsCart;
-    }
+//    public Cart getComponentsCart() {
+//        return componentsCart;
+//    }
+//
+//    public void setComponentsCart(Cart componentsCart) {
+//        this.componentsCart = componentsCart;
+//    }
 
     public List<Cart> getComponentsForCart() {
         return componentsForCart;

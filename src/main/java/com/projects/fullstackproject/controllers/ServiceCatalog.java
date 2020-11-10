@@ -20,10 +20,10 @@ public class ServiceCatalog {
     @Column(length = 10, nullable = false)
     private String servicePrice;
 
+    private boolean includesParts;
+
     @ManyToMany(mappedBy = "cartServiceCatalog")
     private List<Cart> servicesForCart;
-
-    private boolean includesParts;
 
     public ServiceCatalog(){}
 
