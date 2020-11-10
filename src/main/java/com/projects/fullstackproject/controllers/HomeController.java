@@ -9,7 +9,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String landingPage(Model model) {
-        model.addAttribute("title", "Home");
         return "home";
     }
 }
