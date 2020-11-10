@@ -32,6 +32,9 @@ public class Merch {
     @Column(length = 30)
     private String shipping;
 
+    @Column(length = 50)
+    private String merchImage;
+
     @ManyToMany(mappedBy = "cartMerch")
     private List<Cart> merchForCart;
 
@@ -115,6 +118,14 @@ public class Merch {
 
     public void setMerchPrice(String merchPrice) {
         this.merchPrice = merchPrice;
+    }
+
+    public String getMerchImage() {
+        return merchImage;
+    }
+
+    public void setMerchImage(String merchImage) {
+        this.merchImage = merchImage;
     }
 
     public List<Cart> getMerchForCart() {
