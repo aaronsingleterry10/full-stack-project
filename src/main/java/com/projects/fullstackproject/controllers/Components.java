@@ -32,6 +32,8 @@ public class Components {
     @Column(length = 20)
     private String shipping;
 
+    @Column(length = 50)
+    private String componentImage;
 //    @ManyToOne
 //    @JoinColumn(name = "cart_id")
 //    private Cart componentsCart;
@@ -105,7 +107,15 @@ public class Components {
         this.shipping = shipping;
     }
 
-//    public Cart getComponentsCart() {
+    public String getComponentImage() {
+        return componentImage;
+    }
+
+    public void setComponentImage(String componentImage) {
+        this.componentImage = componentImage;
+    }
+
+    //    public Cart getComponentsCart() {
 //        return componentsCart;
 //    }
 //
