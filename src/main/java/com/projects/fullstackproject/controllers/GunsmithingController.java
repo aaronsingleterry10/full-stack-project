@@ -8,6 +8,6 @@ public class GunsmithingController {
 
     @GetMapping("/gunsmithing")
     public String gunsmithingPage() {
-        return "gunsmithing";
+        return "gunsmith-services";
     }
 }
