@@ -18,12 +18,27 @@
             <li class="nav-item">
                 <a class="nav-link" th:href="@{/}">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/gunsmithing}">Gunsmith Services</a>
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" th:href="@{/gunsmithing}">Gunsmith Services</a>-->
+<!--            </li>-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Gunsmith Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Precision Rifle Services</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">AR-15</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">AK-47</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Miscellaneous</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" th:href="@{/about-us}">About Us</a>
             </li>
+
         </ul>
         <span class="navbar-text">
       361-463-1986
