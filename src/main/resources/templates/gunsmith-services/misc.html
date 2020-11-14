@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="partials/navbar :: head ('Miscellaneous')"></head>
 <body>
-
+<nav th:replace="partials/navbar :: navbar"></nav>
+<h1 class="page-title">Miscellaneous</h1>
+<div class="page-container">
+    <div class="container">
+        <div>
+            <h3>Miscellaneous Services</h3>
+        </div>
+        <div>
+            <p>Service charge Per Hour: $60</p>
+            <p>Minimum Charge per gun: $25</p>
+            <p>Basic Cleaning: $20</p>
+            <p>Detailed Cleaning :Completely stripping your firearm, cleaning all parts, checking for wear or broken
+                parts, and making suggestions of services needed to put it in A-1 condition. Price is based on the
+                complexity of the firearm. :$40 to $100</p>
+            <p>Glock Maintenance Service - $120 (Includes full cleaning and inspection and replacement of parts by
+                Glock Certified Armorer.)</p>
+            <p>AR-15 M4 Maintenance Service - $120 (Includes full cleaning and inspection plus replacement of
+                commonly worn parts)</p>
+            <p>Mounting Scope :$30 - $60</p>
+            <p>RMR Slide Cut $160 (Glock, M&P, CZ, 1911 only)</p>
+            <p>RMR Cut with glock rear dovetail $225</p>
+        </div>
+    </div>
+    <footer th:replace="partials/navbar :: footer"></footer>
+</div>
+<div th:replace="partials/navbar :: scripts"></div>
 </body>
 </html>
