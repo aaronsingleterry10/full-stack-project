@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class GunsmithingController {
 
-    @GetMapping("/gunsmith-services")
+    @GetMapping("/precision")
     public String gunsmithingPage() {
-        return "gunsmith-services";
+        return "gunsmith-services/precision";
     }
 
     @GetMapping("/ar15")
