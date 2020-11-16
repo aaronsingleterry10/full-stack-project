@@ -9,7 +9,7 @@ body {
 }
 
 img {
-    width: 300px;
+    width: 400px;
     height: 400px;
 }
 
@@ -41,4 +41,9 @@ footer {
     height: auto;
     /*position: absolute;*/
     /*bottom: -20px;*/
+}
+
+.img-brand {
+    max-width: 60px;
+    height: 60px;
 }
