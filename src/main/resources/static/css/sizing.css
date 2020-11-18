@@ -17,6 +17,11 @@ p {
     margin-bottom: 0;
 }
 
+.carousel-wrap {
+    max-width: 500px;
+    max-height: 500px;
+}
+
 .page-title {
     width: 75%;
     text-align: center;
@@ -39,6 +44,7 @@ p {
 footer {
     width: 100%;
     height: auto;
+    padding: 65px;
     /*position: absolute;*/
     /*bottom: -20px;*/
 }
@@ -46,4 +52,22 @@ footer {
 .img-brand {
     max-width: 60px;
     height: 60px;
+}
+
+#support-header {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+#social-media {
+    display: flex;
+}
+
+.icon {
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.margin-bottom {
+    margin-bottom: 5px;
 }
