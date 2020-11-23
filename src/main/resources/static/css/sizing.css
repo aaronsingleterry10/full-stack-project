@@ -15,8 +15,8 @@ body {
 }
 
 img {
-    width: 700px;
-    height: 700px;
+    max-width: 600px;
+    max-height: 600px;
     /*width: 100%;*/
     /*height: auto;*/
 }
@@ -28,8 +28,8 @@ p {
 .carousel-wrap {
     /*display: flex;*/
     /*justify-content: space-between;*/
-    max-width: 700px;
-    max-height: 700px;
+    max-width: 600px;
+    max-height: 600px;
     margin: auto;
     padding: 15px;
 }
@@ -61,6 +61,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 50px;
+    margin-top: 25px;
     /*position: absolute;*/
     /*bottom: -20px;*/
 }
