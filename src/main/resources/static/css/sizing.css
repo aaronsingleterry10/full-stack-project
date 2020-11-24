@@ -14,7 +14,7 @@ body {
     /*margin: 0 auto 0 auto;*/
 }
 
-img {
+.img-carousel {
     max-width: 600px;
     max-height: 600px;
     /*width: 100%;*/
@@ -88,4 +88,8 @@ footer {
 
 .margin-bottom {
     margin-bottom: 5px;
+}
+
+.img-card {
+    max-height: 500px;
 }
