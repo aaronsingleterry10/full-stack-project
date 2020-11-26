@@ -31,5 +31,6 @@ build/
 !**/src/test/**/build/
 
 src/main/resources/application.properties
+src/main/java/com/projects/fullstackproject/models/Passwords.java
 ### VS Code ###
 .vscode/
