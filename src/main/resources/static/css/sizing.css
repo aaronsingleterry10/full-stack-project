@@ -93,3 +93,12 @@ footer {
 .img-card {
     max-height: 500px;
 }
+
+#contact-us {
+    display: flex;
+    align-items: center;
+}
+
+.larger-text {
+    font-size: 20px;
+}
