@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="partials/navbar :: head ('Contact Us')"></head>
 <body>
+<nav th:replace="partials/navbar :: navbar"></nav>
+<h1 class="page-title">Contact Us</h1>
+<div class="page-container">
+    <div class="container">
 
+    </div>
+    <footer th:replace="partials/navbar :: footer"></footer>
+</div>
+<div th:replace="partials/navbar :: scripts"></div>
 </body>
 </html>
