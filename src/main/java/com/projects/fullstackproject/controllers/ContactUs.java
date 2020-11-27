@@ -25,7 +25,10 @@ public class ContactUs {
                               @RequestParam(name = "email") String email,
                               @RequestParam(name = "phone") String phone,
                               @RequestParam(name = "message") String message) {
-        emailService.prepareAndSend("aaronsingleterry10@gmail.com", "Question from customer", email + "\n" + phone + "\n" + message);
+        emailService.prepareAndSend(email,
+                "aaronsingleterry10@gmail.com",
+                "Question from customer",
+                name + "\n" + email + "\n" + phone + "\n" + message);
         return "home";
     }
 }

@@ -13,10 +13,10 @@ public class EmailService {
     @Autowired
     public JavaMailSender emailSender;
 
-    @Value("aaronsingleterry10@gmail.com")
-    private String from;
+//    @Value("aaronsingleterry10@gmail.com")
+//    private String from;
 
-    public void prepareAndSend(String to, String subject, String body) {
+    public void prepareAndSend(String from, String to, String subject, String body) {
         SimpleMailMessage msg = new SimpleMailMessage();
         msg.setFrom(from);
         msg.setTo(to);
