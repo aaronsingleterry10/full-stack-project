@@ -9,14 +9,14 @@ body {
 }
 
 #home-img {
-    max-width: 400px;
+    max-width: 900px;
     max-height: 400px;
     /*margin: 0 auto 0 auto;*/
 }
 
 .img-carousel {
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 900px;
+    max-height: 800px;
     /*width: 100%;*/
     /*height: auto;*/
 }
@@ -28,8 +28,8 @@ p {
 .carousel-wrap {
     /*display: flex;*/
     /*justify-content: space-between;*/
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 800px;
+    max-height: 800px;
     margin: auto;
     padding: 15px;
 }
