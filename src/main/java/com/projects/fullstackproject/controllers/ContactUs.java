@@ -29,6 +29,6 @@ public class ContactUs {
                 "aaronsingleterry10@gmail.com",
                 "Question from customer",
                 name + "\n" + email + "\n" + phone + "\n" + message);
-        return "home";
+        return "thanks-for-msg";
     }
 }
