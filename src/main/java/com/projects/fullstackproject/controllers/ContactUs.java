@@ -31,4 +31,9 @@ public class ContactUs {
                 name + "\n" + email + "\n" + phone + "\n" + message);
         return "thanks-for-msg";
     }
+
+    @GetMapping("/thank-you")
+    public String thankYou() {
+        return "thanks-for-msg";
+    }
 }
