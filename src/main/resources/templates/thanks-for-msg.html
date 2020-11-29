@@ -6,13 +6,22 @@
 <h1 class="page-title">Your message has been submitted!</h1>
 <div class="page-container">
     <div class="container">
-        <h3><a href="">Return home or view more...</a></h3>
-        <ul>
-            <li><a href="">Precision Rifle Services</a></li>
-            <li><a href="">AR-15 Services</a></li>
-            <li><a href="">AK-47 Services</a></li>
-            <li><a href="">Miscellaneous</a></li>
-        </ul>
+        <h3><a th:href="@{/}">Return home or view more...</a></h3>
+<!--        <ul>-->
+<!--            <li><a th:href="@{/precision}">Precision Rifle Services</a></li>-->
+<!--            <li><a th:href="@{/ar15}">AR-15 Services</a></li>-->
+<!--            <li><a th:href="@{/ak47}">AK-47 Services</a></li>-->
+<!--            <li><a th:href="@{/misc}">Miscellaneous</a></li>-->
+<!--        </ul>-->
+        <div class="list-group">
+            <a th:href="@{/precision}" class="list-group-item list-group-item-action">
+                Precision Rifle Services
+            </a>
+            <a th:href="@{/ar15}" class="list-group-item list-group-item-action">AR-15 Services</a>
+            <a th:href="@{/ak47}" class="list-group-item list-group-item-action">AK-47 Services</a>
+            <a th:href="@{/misc}" class="list-group-item list-group-item-action">Miscellaneous</a>
+<!--            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>-->
+        </div>
     </div>
     <footer th:replace="partials/navbar :: footer"></footer>
 </div>
