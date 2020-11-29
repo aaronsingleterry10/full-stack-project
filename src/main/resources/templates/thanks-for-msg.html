@@ -3,7 +3,19 @@
 <head th:replace="partials/navbar :: head ('Thank You')"></head>
 <body>
 <nav th:replace="partials/navbar :: navbar"></nav>
-
+<h1 class="page-title">Your message has been submitted!</h1>
+<div class="page-container">
+    <div class="container">
+        <h3><a href="">Return home or view more...</a></h3>
+        <ul>
+            <li><a href="">Precision Rifle Services</a></li>
+            <li><a href="">AR-15 Services</a></li>
+            <li><a href="">AK-47 Services</a></li>
+            <li><a href="">Miscellaneous</a></li>
+        </ul>
+    </div>
+    <footer th:replace="partials/navbar :: footer"></footer>
+</div>
 <div th:replace="partials/navbar :: scripts"></div>
 </body>
 </html>
